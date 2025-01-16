@@ -51,8 +51,6 @@ const ClassListPage = () => {
             <td className='hidden md:table-cell'>{item.supervisor}</td>
             <td>
                 <div className='flex items-center gap-2'>
-                    <Link href={`/list/teachers/${item.id}`}></Link>
-
                     {role === "admin" && (
                         <>
                             <FormModal table='class' type='update' data={item} />
